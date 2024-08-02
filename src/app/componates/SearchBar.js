@@ -3,7 +3,8 @@ import React from "react";
 const SearchBar = () => {
   return (
     <div className="search-bar">
-      <import placeholder="search" />
+      <import placeholder="search location" />
+      <button>Search</button>
     </div>
   );
 };
