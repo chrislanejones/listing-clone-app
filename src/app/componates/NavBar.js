@@ -1,104 +1,35 @@
 import React from "react";
 
-return <nav></nav>;
 const Navbar = () => {
-  <svg
-    xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns="http://www.w3.org/2000/svg"
-    version="1.0"
-    width="100.36"
-    height="20"
-    id="svg2"
-  >
-    <defs id="defs4" />
-    <g id="layer1">
-      <rect
-        width="177.65329"
-        height="176.92159"
-        ry="0"
-        x="12.431803"
-        y="12.791639"
-        id="rect2396"
-        style="fill:none;stroke:#000000;stroke-width:12.97409439;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-      <path
-        d="m 255.06352,571.7821 a 19.950512,19.950512 0 1 1 -39.90103,0 19.950512,19.950512 0 1 1 39.90103,0 z"
-        transform="matrix(2.5948189,0,0,2.5948189,-304.51496,-1381.5742)"
-        id="path3174"
-        style="fill:none;stroke:#000000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-      <path
-        d="m 441.86118,46.397134 0,69.460816 c 0,49.23082 68.15022,53.27713 68.15022,0 l 0,-70.116106"
-        id="path3176"
-        style="fill:none;stroke:#000000;stroke-width:15.56891346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-      <path
-        d="m 255.05711,571.27665 a 19.950512,19.950512 0 1 1 -39.89462,0.50545"
-        transform="matrix(1.4944883,0,0,1.4944883,280.29839,-729.8697)"
-        id="path3182"
-        style="fill:none;stroke:#000000;stroke-width:10.41755486;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-      <path
-        d="m 255.05711,571.27665 a 19.950512,19.950512 0 1 1 -39.89462,0.50545"
-        transform="matrix(-1.2243391,0,0,-1.2243391,922.23224,774.7523)"
-        id="path3184"
-        style="fill:none;stroke:#000000;stroke-width:12.71617794;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-      <path
-        d="m 609.8941,73.682334 c 0,30.504486 51.66468,17.67141 51.66468,52.591456"
-        id="path3186"
-        style="fill:none;stroke:#000000;stroke-width:15.56891346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-      <path
-        d="m 65.213813,161.02581 0,-116.303496 0,52.82309 74.137657,0 3e-5,-53.28645 0,114.913396"
-        id="path3200"
-        style="fill:none;stroke:#000000;stroke-width:15.56891346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-      <path
-        d="m 811.22423,54.452884 -50.50629,0 0,96.842356 51.89638,0"
-        id="path3202"
-        style="fill:none;stroke:#000000;stroke-width:15.56891346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-      <path
-        d="m 761.1813,97.082044 50.04293,0"
-        id="path3204"
-        style="fill:none;stroke:#000000;stroke-width:15.56891346;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-      <path
-        d="m 245.27398,185.97406 579.27698,0"
-        id="path3208"
-        style="fill:none;stroke:#000000;stroke-width:9.08186626;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-      <path
-        d="m 884.551,196.8273 0,0 -0.002,-0.68358 5.1107,-41.20525 0.23732,-0.74601 13.28869,41.2833 13.34658,-40.9267 0.17417,0.49481 0.21054,1.26329 6.54066,39.2438 0.001,0.96917"
-        id="path3210"
-        style="fill:none;stroke:#000000;stroke-width:7.78445673;stroke-linecap:butt;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-      <path
-        d="m 953.64325,192.36312 0,-33.91127 c 11.32,0 24.90104,0.80416 24.90104,16.54607 0,16.69444 -15.82943,17.3652 -24.90104,17.3652 z"
-        id="path3212"
-        style="fill:none;stroke:#000000;stroke-width:7.78445673;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-      <rect
-        width="3.3017933"
-        height="3.3017933"
-        ry="0"
-        x="935.44629"
-        y="190.7122"
-        id="rect3214"
-        style="fill:none;stroke:#000000;stroke-width:4.48266315;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-      <rect
-        width="3.3017933"
-        height="3.3017933"
-        ry="0"
-        x="990.32684"
-        y="189.89308"
-        id="rect3216"
-        style="fill:none;stroke:#000000;stroke-width:4.48266315;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-      />
-    </g>
-  </svg>;
+  return (
+    <nav>
+      <>
+        <svg
+          xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:cc="http://creativecommons.org/ns#"
+          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+          xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+          viewBox="0 0 177.27083 39.158333"
+          version="1.1"
+          id="svg8"
+          inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+          sodipodi:docname="zillow logo.svg"
+          width="200"
+          height="50"
+        >
+          <path
+            id="path940"
+            d="m 14.098,6.364 c 0.103,-0.027 0.15,0.012 0.211,0.084 0.35,0.416 1.478,1.866 1.785,2.263 a 0.132,0.132 0 0 1 -0.027,0.19 c -2.274,1.873 -4.804,4.522 -6.214,6.42 -0.03,0.04 -0.005,0.043 0.015,0.034 2.456,-1.116 8.224,-2.897 10.826,-3.396 V 8.485 L 10.524,0 0.333,8.485 v 3.797 C 3.492,10.301 10.79,7.234 14.097,6.364 Z m 47.28,-5.183 h 4.475 v 22.332 h -4.475 z m -3.315,0 h -4.475 v 22.333 h 4.475 z m 29.713,7.72 h -4.421 l 4.477,14.615 h 4.117 l 1.124,-3.695 c 0.446,-1.468 1.19,-4.209 1.19,-4.209 a 0.034,0.034 0 0 1 0.033,-0.026 c 0.015,0 0.028,0.01 0.033,0.026 0,0 0.745,2.794 1.168,4.234 l 1.103,3.667 h 4.044 L 105.089,8.9 h -4.109 l -1.282,4.421 a 278.446,278.446 0 0 0 -1.141,4.213 0.034,0.034 0 0 1 -0.033,0.026 0.034,0.034 0 0 1 -0.033,-0.026 c 0,0 -0.69,-2.698 -1.137,-4.213 l -1.32,-4.42 h -3.266 l -1.344,4.42 c -0.421,1.414 -1.16,4.215 -1.16,4.215 a 0.034,0.034 0 0 1 -0.033,0.023 0.034,0.034 0 0 1 -0.032,-0.023 c 0,0 -0.714,-2.75 -1.142,-4.215 z m -19.708,7.356 c 0,-4.44 3.393,-7.729 7.544,-7.729 4.11,0 7.504,3.29 7.504,7.729 0,4.453 -3.392,7.743 -7.504,7.743 -4.15,0 -7.544,-3.29 -7.544,-7.74 z m 10.754,0 c 0,-2.174 -1.47,-3.654 -3.21,-3.654 -1.781,0 -3.25,1.48 -3.25,3.654 0,2.189 1.469,3.654 3.25,3.654 1.74,0 3.21,-1.465 3.21,-3.654 z M 27.702,3.247 v 4.306 h 7.909 c 0.032,0 0.044,0.032 0.028,0.06 l -7.94,14.242 -0.014,0.026 c -0.18,0.348 -0.223,0.432 -0.223,0.793 v 0.84 H 42.868 V 19.216 H 34.31 a 0.035,0.035 0 0 1 -0.032,-0.021 0.039,0.039 0 0 1 0.004,-0.04 L 42.314,4.726 42.336,4.68 c 0.056,-0.12 0.11,-0.232 0.11,-0.532 l 0.002,-0.9 H 27.702 Z M 47.955,1.581 c 1.395,0 2.548,1.188 2.548,2.651 0,1.464 -1.153,2.654 -2.548,2.654 -1.395,0 -2.547,-1.188 -2.547,-2.652 0,-1.464 1.152,-2.652 2.547,-2.652 z m -2.237,7.32 h 4.474 V 23.514 H 45.718 Z M 5.604,20.922 c 0.055,0.068 0.15,0.082 0.22,0.034 3.778,-2.054 12.089,-4.661 14.87,-5.16 v 7.806 H 0.334 v -8.11 c 2.093,-1.25 7.747,-3.814 9.737,-4.5 0.04,-0.014 0.049,0.01 0.015,0.037 -1.91,1.497 -4.904,5.03 -6.371,7.301 -0.067,0.106 -0.063,0.14 -0.01,0.205 z M 107.409,6.104 c 0.387,0 0.663,0.294 0.663,0.714 0,0.318 -0.163,0.569 -0.411,0.668 l 0.381,0.66 h -0.362 l -0.354,-0.614 h -0.312 v 0.612 h -0.318 v -2.04 z m -0.395,1.128 h 0.375 c 0.211,0 0.366,-0.172 0.366,-0.411 0,-0.24 -0.155,-0.415 -0.365,-0.415 h -0.376 z m 0.299,-1.836 c -0.676,0 -1.285,0.43 -1.543,1.088 a 1.833,1.833 0 0 0 0.362,1.921 1.606,1.606 0 0 0 1.82,0.382 c 0.624,-0.273 1.031,-0.916 1.031,-1.629 -0.001,-0.973 -0.748,-1.761 -1.67,-1.762 z m 0,3.186 c -0.546,0 -1.038,-0.347 -1.247,-0.879 a 1.482,1.482 0 0 1 0.292,-1.552 c 0.386,-0.408 0.967,-0.53 1.471,-0.309 0.504,0.22 0.833,0.74 0.833,1.316 -0.001,0.786 -0.604,1.423 -1.349,1.424 z"
+            inkscape:connector-curvature="0"
+            style="clip-rule:evenodd;fill:#006aff;fill-rule:evenodd"
+          />
+        </svg>
+      </>
+    </nav>
+  );
 };
 
 export default Navbar;
