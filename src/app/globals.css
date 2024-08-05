@@ -17,3 +17,11 @@ nav {
   align-items: center;
   border-bottom: rgb(199, 199, 199) solid 1px;
 }
+
+.search-bar {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: rgb(199, 199, 199) solid 1px;
+}
