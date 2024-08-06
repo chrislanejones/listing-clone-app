@@ -16,26 +16,28 @@ const getProperties = async () => {
     },
     body: JSON.stringify({
       query: `
-      query MyQuery {
-      properties {
-      beds
-      description
-      images {
-        fileName
-        url
-      }
-        location {
-        latitude
-        longitude
+      query PropertiesQuery {
+        properties {
+        beds
+        description
+        images {
+          fileName
+          url
         }
-        name
-        rentalPrice
-        slug
-        id
-      }
+          location {
+          latitude
+          longitude
+          }
+          name
+          rentalPrice
+          slug
+          id
+        }
       }`,
     }),
   });
+  const json == await response.json()
+  return json.data.properties
 };
 
 const Home = () => {
