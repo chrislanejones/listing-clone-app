@@ -4,7 +4,7 @@ import Navbar from "./componates/NavBar";
 import SearchBar from "./componates/SearchBar";
 
 // "https://api.hygraph.com/v1/properties"
-const getProperties = async () => {
+const getProperties = async (slug) => {
   const HYGRAPH_ENDPOINT = process.env.HYGRAPH_ENDPOINT;
   if (!HYGRAPH_ENDPOINT) {
     throw new error("HYGRAPH_ENDPOINT is not set");
@@ -15,16 +15,27 @@ const getProperties = async () => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      query: ` query Properties {
-          properties(limit: 1) {
-          id
-          slug
-          beds
-          rentalPrice
+      query: ` query Property($slug: String) {
+          properties(slug: $slug) {
+          id,
+            name,
+            description,
+            rentalPrice,
+            parking,
+            pool,
+            petFriendly,
+            inUnitDryer,
+            elevator,
+            beds,
           images {
-            url
-            fileName
+            id,
+            url,
+            fileName,
           }
+            managingBroker {
+            name,
+            phoneNumber
+            }
         }
       }`,
       variables: {
@@ -33,8 +44,10 @@ const getProperties = async () => {
     }),
   });
   const json = await response.json();
-  return json.data.properties;
+  return json.data.property;
 };
+
+const Property
 
 const Home = async () => {
   const properties = await getProperties();
@@ -67,4 +80,4 @@ const Home = async () => {
   );
 };
 
-export default Home;
+export default Property;
