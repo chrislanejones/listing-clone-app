@@ -15,25 +15,21 @@ const getProperties = async () => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      query: `
-      query PropertiesQuery {
-        properties {
-        beds
-        description
-        images {
-          fileName
-          url
-        }
-          location {
-          latitude
-          longitude
-          }
-          name
-          rentalPrice
-          slug
+      query: ` query Properties {
+          properties(limit: 1) {
           id
+          slug
+          beds
+          rentalPrice
+          images {
+            url
+            fileName
+          }
         }
       }`,
+      variables: {
+        slug: slug,
+      },
     }),
   });
   const json = await response.json();
