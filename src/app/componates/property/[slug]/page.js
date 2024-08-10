@@ -47,10 +47,17 @@ const getProperty = async (slug) => {
 
 const Home = async ({ params }) => {
   const property = await getProperty(params.slug);
-  console.log(property);
   return (
-    <div>
-      <h2>I am a property</h2>
+    <div className="property">
+      {property.images.map((images) => (
+        <ImageCard
+          key={image.id}
+          url={image.url}
+          fileName={image.fileName}
+          width={300}
+          height={150}
+        />
+      ))}
     </div>
   );
 };
