@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import ImageCard from "./ImageCard";
 
-const Card = (propertyName, slug, rentalPrice, beds, image) => {
+const Card = ({ propertyName, slug, rentalPrice, beds, image }) => {
   return (
     <Link href={`/property/${slug}`}>
       <div className="card">

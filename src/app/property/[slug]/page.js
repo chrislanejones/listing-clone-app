@@ -1,5 +1,5 @@
+import ImageCard from "@/app/componates/ImageCard";
 import Link from "next/link";
-import ImageCard from "../../componates/ImageCard";
 
 // "https://api.hygraph.com/v1/properties"
 const getProperty = async (slug) => {
@@ -46,7 +46,7 @@ const getProperty = async (slug) => {
 };
 
 const Home = async ({ params }) => {
-  const property = await getProperty(params.slug);
+  const Property = await getProperty(params.slug);
   return (
     <div className="property">
       {property.images.map((images) => (

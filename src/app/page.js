@@ -1,4 +1,5 @@
 import Card from "./componates/Card";
+import ImageCard from "./componates/ImageCard";
 import Map from "./componates/Map";
 import Navbar from "./componates/NavBar";
 import SearchBar from "./componates/SearchBar";
@@ -20,7 +21,6 @@ const getProperties = async () => {
           properties {
             beds
             description
-            elevator
             images {
               fileName
               url
@@ -34,11 +34,9 @@ const getProperties = async () => {
               phoneNumber
             }
             name
-            parking
-            petFriendly
-            pool
+            rentalPrice
+            slug
             id
-            inUnitDryer
           }
         }
       `,
