@@ -54,10 +54,21 @@ const Home = async ({ params }) => {
           key={image.id}
           url={image.url}
           fileName={image.fileName}
-          width={300}
-          height={150}
+          width={2000}
+          height={550}
         />
       ))}
+      <div className="property-info-container">
+        <h1>{property.name}</h1>
+        <h2>
+          <span>{property.price} Beds</span>
+          <span>${property.rentalPrice}</span>
+        </h2>
+        <br />
+        <h2>Overview</h2>
+        <p>{property.description}</p>
+        <br />
+      </div>
     </div>
   );
 };
