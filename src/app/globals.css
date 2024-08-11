@@ -52,7 +52,7 @@ article {
   width: 50vw;
 }
 
-article.listings {
+article.Listings {
   box-shadow: rgba(60, 64, 67, 0.3) -2px 0 2px;
   padding: 20px;
 }
@@ -110,4 +110,5 @@ p {
   border: rgb(199, 199, 199) solid 1px;
   border-radius: 5px;
   padding: 4px 10px;
+  margin: 5px 0;
 }

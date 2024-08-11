@@ -1,6 +1,5 @@
 import Link from "next/link";
-import ImageCard from "../../ImageCard";
-import { list } from "postcss";
+import ImageCard from "../../componates/ImageCard";
 
 // "https://api.hygraph.com/v1/properties"
 const getProperty = async (slug) => {

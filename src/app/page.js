@@ -15,26 +15,33 @@ const getProperties = async () => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      query: ` query Properties {
-        properties(limit: 1) {
-        id
-        slug
-        beds
-        rentalProce
-        images {
-          url
-          fileName
-        }
-          location {
-          latitude
-          longitude
+      query: ` 
+      query Properties {
+          properties {
+            beds
+            description
+            elevator
+            images {
+              fileName
+              url
+            }
+            location {
+              latitude
+              longitude
+            }
+            managingBroker {
+              name
+              phoneNumber
+            }
+            name
+            parking
+            petFriendly
+            pool
+            id
+            inUnitDryer
           }
-          name
-          rentalPrice
-          slug
-          id
         }
-      }`,
+      `,
     }),
   });
   const json = await response.json();
@@ -43,6 +50,7 @@ const getProperties = async () => {
 
 const Home = async () => {
   const properties = await getProperties();
+  console.log(properties);
   return (
     <>
       <Navbar />
@@ -51,7 +59,7 @@ const Home = async () => {
         <article>
           <Map />
         </article>
-        <article className="listings">
+        <article className="Listings">
           <h2>Rental Listings</h2>
           <div className="card-container">
             {properties.map((property) => (
