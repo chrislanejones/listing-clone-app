@@ -14,26 +14,26 @@ const getProperty = async (slug) => {
     },
     body: JSON.stringify({
       query: ` query Property($slug: String) {
-          propery( where: {slug: $slug}) {
+          property( where: {slug: $slug}) {
           id,
-            name,
-            description,
-            rentalPrice,
-            parking,
-            pool,
-            petFriendly,
-            inUnitDryer,
-            elevator,
-            beds,
+          name,
+          description,
+          rentalPrice,
+          parking,
+          pool,
+          petFriendly,
+          inUnitDryer,
+          elevator,
+          beds,
           images {
             id,
             url,
             fileName,
-          }
-            managingBroker {
+            }
+          managingBroker {
             name,
             phoneNumber
-            }
+          }
         }
       }`,
       variables: {
@@ -41,23 +41,25 @@ const getProperty = async (slug) => {
       },
     }),
   });
-  const json = await response.json();
-  return json.data.property;
+  const data = await response.json();
+  return data.data.property;
 };
 
-const Home = async ({ params }) => {
-  const Property = await getProperty(params.slug);
+const Property = async ({ params }) => {
+  const property = await getProperty(params.slug);
   return (
     <div className="property">
-      {property.images.map((images) => (
-        <ImageCard
-          key={image.id}
-          url={image.url}
-          fileName={image.fileName}
-          width={2000}
-          height={550}
-        />
-      ))}
+      <div className="property-images-container">
+        {property.images.map((image) => (
+          <ImageCard
+            key={image.id}
+            url={image.url}
+            fileName={image.fileName}
+            width={2000}
+            height={550}
+          />
+        ))}
+      </div>
       <div className="property-info-container">
         <h1>{property.name}</h1>
         <h2>

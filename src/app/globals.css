@@ -102,13 +102,28 @@ p {
   width: 100%;
 }
 
-.property-image-container {
+.property-images-container {
   width: 70%;
 }
 
+.property-info-container {
+  width: 30%;
+  padding: 30px;
+}
+
 .property-info-container span {
-  border: rgb(199, 199, 199) solid 1px;
+  border: solid 1px rgb(199, 199, 199);
   border-radius: 5px;
   padding: 4px 10px;
   margin: 5px 0;
+}
+
+button {
+  background-color: rgb(0, 106, 225);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 8px;
+  margin: 10px 5px;
 }
