@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ImageCard from "../../ImageCard";
+import { list } from "postcss";
 
 // "https://api.hygraph.com/v1/properties"
 const getProperty = async (slug) => {
@@ -68,6 +69,19 @@ const Home = async ({ params }) => {
         <h2>Overview</h2>
         <p>{property.description}</p>
         <br />
+        <h2>Amenites:</h2>
+        <ul>
+          {property.parking && <l1>Private Parking</l1>}
+          {property.pool && <li>Pool</li>}
+          {property.petFriendly && <li>Pet Friendly</li>}
+          {property.inUnitDryer && <li>In-Unit Dryer</li>}
+          {property.elevator && <li>Elevator</li>}
+        </ul>
+        <h3>Licenced Brokerage</h3>
+        <p>managing Broker: {property.managingBroker.name}</p>
+        <p>Phone Number: {property.managingBroker.phoneNumber}</p>
+        <br/>
+        <Link href={/}><button>Go back</button></Link>
       </div>
     </div>
   );
