@@ -89,3 +89,25 @@ p {
   padding: 1px;
   color: rgb(0, 0, 0);
 }
+
+.property {
+  margin: 50px 100px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  overflow: hidden;
+  display: flex;
+}
+
+.image {
+  width: 100%;
+}
+
+.property-image-container {
+  width: 70%;
+}
+
+.property-info-container span {
+  border: rgb(199, 199, 199) solid 1px;
+  border-radius: 5px;
+  padding: 4px 10px;
+}

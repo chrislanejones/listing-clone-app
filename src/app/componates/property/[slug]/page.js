@@ -80,8 +80,10 @@ const Home = async ({ params }) => {
         <h3>Licenced Brokerage</h3>
         <p>managing Broker: {property.managingBroker.name}</p>
         <p>Phone Number: {property.managingBroker.phoneNumber}</p>
-        <br/>
-        <Link href={/}><button>Go back</button></Link>
+        <br />
+        <Link href={"/"}>
+          <button>Go back</button>
+        </Link>
       </div>
     </div>
   );
