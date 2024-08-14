@@ -64,7 +64,7 @@ const Property = async ({ params }) => {
         <h1>{property.name}</h1>
         <h2>
           <span>{property.price} Beds</span>
-          <span>${property.rentalPrice}</span>
+          <span>GEL{property.rentalPrice}</span>
         </h2>
         <br />
         <h2>Overview</h2>
