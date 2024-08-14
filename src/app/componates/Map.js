@@ -8,8 +8,8 @@ const Map = ({ locations }) => {
     height: "90%",
   };
   const center = {
-    lat: location[0].latitude,
-    lng: location[0].longitude,
+    lat: locations[0].latitude,
+    lng: locations[0].longitude,
   };
 
   const image =
@@ -17,7 +17,7 @@ const Map = ({ locations }) => {
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
+    googleMapsApiKey: process.env.NEXT_PUBLIC_MAP_API,
   });
 
   const [map, setMap] = useState(null);
@@ -29,7 +29,7 @@ const Map = ({ locations }) => {
   }, []);
 
   const onUnmount = useCallback((map) => {
-    setMap;
+    setMap(null);
   }, []);
 
   return isLoaded ? (
@@ -60,4 +60,4 @@ const Map = ({ locations }) => {
   );
 };
 
-export default Map;
+export default memo(Map);
