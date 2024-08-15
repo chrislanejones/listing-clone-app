@@ -1,9 +1,5 @@
-import Card from "./componates/Card";
 import Grid from "./componates/Grid";
-import ImageCard from "./componates/ImageCard";
-import Map from "./componates/Map";
 import Navbar from "./componates/NavBar";
-import SearchBar from "./componates/SearchBar";
 
 // "https://api.hygraph.com/v1/properties"
 const getProperties = async () => {

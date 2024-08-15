@@ -8,8 +8,8 @@ const Map = ({ locations }) => {
     height: "90%",
   };
   const center = {
-    lat: locations[0].latitude,
-    lng: locations[0].longitude,
+    lat: locations[0]?.latitude,
+    lng: locations[0]?.longitude,
   };
 
   const image =

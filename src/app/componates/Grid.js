@@ -14,7 +14,7 @@ const Grid = ({ properties }) => {
     setInput(value);
     setHouses(
       properties.filter((property) =>
-        property.name.toLowerCase().includes(value.toLowerCase)
+        property.name.toLowerCase().includes(value.toLowerCase())
       )
     );
   };
@@ -26,7 +26,6 @@ const Grid = ({ properties }) => {
           onChange={(e) => setInputandMapLocations(e.target.value)}
           value={input}
         />
-        <button>Search</button>
       </div>
       <main>
         <article>
