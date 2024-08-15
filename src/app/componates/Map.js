@@ -24,7 +24,7 @@ const Map = ({ locations }) => {
 
   const onLoad = useCallback((map) => {
     const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
+    map.setZoom(7);
     setMap(map);
   }, []);
 
@@ -36,7 +36,6 @@ const Map = ({ locations }) => {
     <GoogleMap
       mapContainerStyle={containerStyle}
       center={center}
-      zoom={10}
       onLoad={onLoad}
       onUnmount={onUnmount}
     >
