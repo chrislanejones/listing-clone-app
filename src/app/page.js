@@ -1,4 +1,5 @@
 import Card from "./componates/Card";
+import Grid from "./componates/Grid";
 import ImageCard from "./componates/ImageCard";
 import Map from "./componates/Map";
 import Navbar from "./componates/NavBar";
@@ -48,31 +49,10 @@ const getProperties = async () => {
 
 const Home = async () => {
   const properties = await getProperties();
-  const locations = properties.map((property) => property.location);
   return (
     <>
       <Navbar />
-      <SearchBar />
-      <main>
-        <article>
-          <Map locations={locations} />
-        </article>
-        <article className="Listings">
-          <h2>Rental Listings</h2>
-          <div className="card-container">
-            {properties.map((property) => (
-              <Card
-                key={property.id}
-                propertyName={property.name}
-                slug={property.slug}
-                rentalPrice={property.rentalPrice}
-                beds={property.beds}
-                image={property.images[0]}
-              />
-            ))}
-          </div>
-        </article>
-      </main>
+      <Grid properties={properties} />
     </>
   );
 };
