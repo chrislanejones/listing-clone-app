@@ -8,6 +8,6 @@
 
 ![Apartment Listing with Map](public/ApartOne.jpg)
 
-![alt text](public/ApartOne.jpg)
+![Individual Apartment Units](public/ApartTwo.jpg)
 
 This is based off Ania Kubów - Zillow Property App with Google MAP API + Next.js
