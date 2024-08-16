@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav>
       <>
-        <h1>Nav</h1>
+        <h1>Apartment Finder Site</h1>
       </>
     </nav>
   );
